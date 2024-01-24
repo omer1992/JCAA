@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</head>
+<body>
+    <df-messenger
+      project-id="abacus-demo-2023"
+      agent-id="86cf9cbb-0eee-4d41-8d6d-9e2f7989e14f"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat
+       chat-title="JCAA Chatbot">
+      </df-messenger-chat>
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        width: 350px;
+      }
+    </style>
+</body>
+</html>
